@@ -1,4 +1,6 @@
 module Hamming (distance) where
 
 distance :: String -> String -> Maybe Int
-distance xs ys = error "You need to implement this function."
+distance xs ys 
+    | length xs /= length ys = Nothing
+    | otherwise = Just $ length . filter (==True) $ zipWith (\a b -> a /= b) xs ys
