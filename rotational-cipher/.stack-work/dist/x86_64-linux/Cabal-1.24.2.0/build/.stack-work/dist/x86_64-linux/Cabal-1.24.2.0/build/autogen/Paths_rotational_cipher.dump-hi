@@ -1,0 +1,621 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-16 16:59:03.469878 UTC
+
+interface rotational-cipher-1.1.0.1-9go241enq9zGHpA7gJ72tT:Paths_rotational_cipher 8002
+  interface hash: dc20479c5dfb20c26b12d910b5f6e03b
+  ABI hash: fe054954872e34036e65f7736e5bb9a3
+  export-list hash: 65861d1c65f5e561adfd19070f2493a1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7d6ecbbe7807ae1be68dd159996443be
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_rotational_cipher.getBinDir
+  Paths_rotational_cipher.getDataDir
+  Paths_rotational_cipher.getDataFileName
+  Paths_rotational_cipher.getDynLibDir
+  Paths_rotational_cipher.getLibDir
+  Paths_rotational_cipher.getLibexecDir
+  Paths_rotational_cipher.getSysconfDir
+  Paths_rotational_cipher.version
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Exception a76dd9666251322fe34dbcca3a0817bf
+import  -/  base-4.9.1.0:Control.Exception.Base 1e106916283856f4d9caeddab92cd861
+import  -/  base-4.9.1.0:Data.Version 20afc045b5bb277e8668ef72aca55a7e
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.IO eb504c57b397cf133849f8586f15dafb
+import  -/  base-4.9.1.0:GHC.IO.Exception 5064be4c355632a1d1c4f2322f56ac52
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.Environment 08cb808e8e6a7821e6f8cfa76a977431
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+addDependentFile "/home/fabien/.stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+2065a4dc7e97862beea63aaffe8ad90c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Paths_rotational_cipher.$trModule2
+                   Paths_rotational_cipher.$trModule1) -}
+d498dcdb7e087d651832063e56ec24ef
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Paths_rotational_cipher"#) -}
+576fce73b740f69d1cfd72b6183b90f6
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "rotational-cipher-1.1.0.1-9go241enq9zGHpA7gJ72tT"#) -}
+15396b50815e8ff16be3202103a58574
+  bindir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/rotational-cipher/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/bin"#) -}
+e48f555465f50bb534feccc28dbaa797
+  datadir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/rotational-cipher/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/share/x86_64-linux-ghc-8.0.2/rotational-cipher-1.1.0.1"#) -}
+edcb0b57c719b7133d1da77634b33533
+  dynlibdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/rotational-cipher/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/lib/x86_64-linux-ghc-8.0.2"#) -}
+3801fe4c245679d61f65599a0f10755e
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rotational_cipher.getBinDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+d9b9f10b217e6b0be03df9e46d995141
+  getBinDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rotational_cipher.getBinDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_rotational_cipher.getBinDir2
+                   eta) -}
+5311800791c4300bcc7dd2a3e927ddb8
+  getBinDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_rotational_cipher.bindir #) } } } } }) -}
+5bc362bd85b93630005d528a68e43d54
+  getBinDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_rotational_cipher.getBinDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+a4e8d9c3baefcd99c4ee0370583a349d
+  getBinDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_rotational_cipher.getBinDir5) -}
+119bf50ff462ae48729a7191471e1216
+  getBinDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "rotational_cipher_bindir"#) -}
+57df1fa8a7aed8872dd0ce26f24a44d9
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rotational_cipher.getDataDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+c74ed70ca2b77225c2c3dd5769895184
+  getDataDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rotational_cipher.getDataDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_rotational_cipher.getDataDir2
+                   eta) -}
+6c77cb414b941361d0b3660312538c55
+  getDataDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_rotational_cipher.datadir #) } } } } }) -}
+ddb408f99528bcd55bfc60e0ee20e31c
+  getDataDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_rotational_cipher.getDataDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+536629b203d806ba99abfb8187e7d9ab
+  getDataDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_rotational_cipher.getDataDir5) -}
+19618fe2561ff947d772cf7c6a1a7db8
+  getDataDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "rotational_cipher_datadir"#) -}
+1b37ecd04ff5eacc39636ae238492a4f
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rotational_cipher.getDataFileName1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
+4565270b6c926e7240e83c32f7bce7de
+  getDataFileName1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (name :: GHC.IO.FilePath)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.catch#
+                        @ GHC.Base.String
+                        @ GHC.Exception.SomeException
+                        Paths_rotational_cipher.getDataDir3
+                          `cast`
+                        (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                        Paths_rotational_cipher.getDataDir2
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      ipv1
+                      (GHC.CString.unpackAppendCString# "/"# name) #) }) -}
+f1d2a642b09ea39578007f52c3e1ee2a
+  getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rotational_cipher.getDynLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+91db636c34b9444079f4676c02d6e891
+  getDynLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rotational_cipher.getDynLibDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_rotational_cipher.getDynLibDir2
+                   eta) -}
+841debb3c8fa54aee11c9364f2116cd0
+  getDynLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_rotational_cipher.dynlibdir #) } } } } }) -}
+ee44471c4504790a71a7640f51cb5f54
+  getDynLibDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_rotational_cipher.getDynLibDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+f090344f1a6eca6580f75818cd771475
+  getDynLibDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_rotational_cipher.getDynLibDir5) -}
+47dc6058b177be52f7cc4d34c0dd0630
+  getDynLibDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "rotational_cipher_dynlibdir"#) -}
+6afdb6b07de74f61c9965026372d9c6d
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rotational_cipher.getLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+50681a8f6c0873bd4b97895b18835726
+  getLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rotational_cipher.getLibDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_rotational_cipher.getLibDir2
+                   eta) -}
+24a3f8603bf00ce286b472a8edda4a10
+  getLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_rotational_cipher.libdir #) } } } } }) -}
+a3e3d5f657d402c19e76dcd919790d6c
+  getLibDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_rotational_cipher.getLibDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+8d2fb0e434d3d1a7b8176e2a462df1ae
+  getLibDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_rotational_cipher.getLibDir5) -}
+c74bf6e50944503b2375f6cafa9f8b5a
+  getLibDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "rotational_cipher_libdir"#) -}
+0659023e155046c86b567da3ff95bdd1
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rotational_cipher.getLibexecDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+bb730cad16ac0560142de0629e48a730
+  getLibexecDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rotational_cipher.getLibexecDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_rotational_cipher.getLibexecDir2
+                   eta) -}
+45f73eca41cedb8585dcccf64631c752
+  getLibexecDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_rotational_cipher.libexecdir #) } } } } }) -}
+73ef350e512d6badd1338373498f00c2
+  getLibexecDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_rotational_cipher.getLibexecDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+21a5148536626603482b69d4cd274356
+  getLibexecDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_rotational_cipher.getLibexecDir5) -}
+b69e6a77c7e8de73bee78303927864c5
+  getLibexecDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "rotational_cipher_libexecdir"#) -}
+5a8d7ca3e6ccdbf986f62837954f2a6a
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rotational_cipher.getSysconfDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+47368fbdc5ed6d6c9ae66cda59e13880
+  getSysconfDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rotational_cipher.getSysconfDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_rotational_cipher.getSysconfDir2
+                   eta) -}
+9b8f32964bf1b782688d0437a8dfffbc
+  getSysconfDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_rotational_cipher.sysconfdir #) } } } } }) -}
+7f640881ec2e4acf9a341e7abfaab099
+  getSysconfDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_rotational_cipher.getSysconfDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+4b1ebddd2e1d1fafae18bce1c2b0d786
+  getSysconfDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_rotational_cipher.getSysconfDir5) -}
+56b1baee87b143b192c05d03cbe288bf
+  getSysconfDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "rotational_cipher_sysconfdir"#) -}
+d30c04ca24597499e5fe7158800b3d3f
+  libdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/rotational-cipher/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/lib/x86_64-linux-ghc-8.0.2/rotational-cipher-1.1.0.1-9go241enq9zGHpA7gJ72tT"#) -}
+cb886e5891c46da4d5835b30a216a0da
+  libexecdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/rotational-cipher/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/libexec"#) -}
+9ac54dc86b71a1f31e85bb81a5092686
+  sysconfdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/rotational-cipher/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/etc"#) -}
+b28a45373658963bd9dec23479f32afd
+  version :: Data.Version.Version
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.Version.Version
+                   Paths_rotational_cipher.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+e46098ea35cba3877cbdd0c48ac8efe7
+  version1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_rotational_cipher.version5
+                   Paths_rotational_cipher.version2) -}
+c4253b5e47aa48e973e88a4ca3d453c8
+  version2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_rotational_cipher.version5
+                   Paths_rotational_cipher.version3) -}
+49f9e4347cb2b91e8d04518258f28809
+  version3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_rotational_cipher.version6
+                   Paths_rotational_cipher.version4) -}
+9497c403df0e25969c50bb151a680f29
+  version4 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_rotational_cipher.version5
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+fcdcf05b790d45146a02de20d39a670b
+  version5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+1fcafdff718b52dcb1cf803608fcd5d2
+  version6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

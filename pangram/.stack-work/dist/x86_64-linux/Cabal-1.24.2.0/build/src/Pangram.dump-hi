@@ -1,0 +1,92 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-16 06:45:40.283094 UTC
+
+interface pangram-1.3.0.5-FTPPTJnnC3C84890gmu5ic:Pangram 8002
+  interface hash: 1f1e191f03e50de8a14882b291e606f1
+  ABI hash: 65bf64a453eeb5a2c1997e6175b44e6d
+  export-list hash: 565efd5794586a6085304c30353b41b0
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Pangram.isPangram
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+c6797e9cf8c1343e90c1da5b9b8d79e2
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Pangram.$trModule2
+                   Pangram.$trModule1) -}
+a488c19fdcd552f87f1c4612e6a30460
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Pangram"#) -}
+f409a7ddc3ebd0ca56c6a5ef1b3c73da
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "pangram-1.3.0.5-FTPPTJnnC3C84890gmu5ic"#) -}
+499769c7c670f297b0eb6baeac30c4c3
+  isPangram :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (text :: GHC.Base.String) ->
+                 case GHC.List.$wlenAcc @ GHC.Types.Char text 0# of ww2 {
+                   DEFAULT
+                   -> let {
+                        lst :: [GHC.Types.Char]
+                        = GHC.Base.map
+                            @ GHC.Types.Char
+                            @ GHC.Types.Char
+                            GHC.Unicode.toLower
+                            text
+                      } in
+                      letrec {
+                        go :: [GHC.Types.Char] -> Data.Monoid.All
+                          {- Arity: 1, Strictness: <S,1*U> -}
+                        = \ (ds :: [GHC.Types.Char]) ->
+                          case ds of wild {
+                            [] -> GHC.Types.True `cast` (Sym (Data.Monoid.N:All[0]))
+                            : y ys
+                            -> case y of wild1 { GHC.Types.C# x ->
+                               case x of wild2 {
+                                 DEFAULT
+                                 -> case GHC.List.elem
+                                           @ GHC.Types.Char
+                                           GHC.Classes.$fEqChar
+                                           wild1
+                                           lst of wild3 {
+                                      GHC.Types.False
+                                      -> GHC.Types.False `cast` (Sym (Data.Monoid.N:All[0]))
+                                      GHC.Types.True -> go ys }
+                                 ' '# -> go ys } } }
+                      } in
+                      (go Pangram.isPangram1) `cast` (Data.Monoid.N:All[0])
+                   0# -> GHC.Types.False }) -}
+935fff20fe1819b34f4b243a8a22dc1b
+  isPangram1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Enum.eftChar 97# 122#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

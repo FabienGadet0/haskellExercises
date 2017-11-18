@@ -1,0 +1,69 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-18 08:21:30.517836 UTC
+
+interface diamond-1.0.0.1-6yr5EVu6sgfGoG4aqYEkSE:Paths_diamond 8002
+  interface hash: d2aab834792dfa0682b697a108e728f2
+  ABI hash: cd9dbc555ba86b2c93681587a5ff11d6
+  export-list hash: 6c315e7fb86669b2265bf46f5751e7a0
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7d6ecbbe7807ae1be68dd159996443be
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_diamond.getBinDir
+  Paths_diamond.getDataDir
+  Paths_diamond.getDataFileName
+  Paths_diamond.getDynLibDir
+  Paths_diamond.getLibDir
+  Paths_diamond.getLibexecDir
+  Paths_diamond.getSysconfDir
+  Paths_diamond.version
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Exception a76dd9666251322fe34dbcca3a0817bf
+import  -/  base-4.9.1.0:Control.Exception.Base 1e106916283856f4d9caeddab92cd861
+import  -/  base-4.9.1.0:Data.Version 20afc045b5bb277e8668ef72aca55a7e
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.IO eb504c57b397cf133849f8586f15dafb
+import  -/  base-4.9.1.0:GHC.IO.Exception 5064be4c355632a1d1c4f2322f56ac52
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.Environment 08cb808e8e6a7821e6f8cfa76a977431
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+addDependentFile "/home/fabien/.stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+a3465e693cc0b5725947b9ea88e9da27
+  $trModule :: GHC.Types.Module
+41d8cdde0d283c9e2e4069e772b39002
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+15686f84c5599f4b86cfed50533a3a32
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+4338bbd151f0671cb75187e513055230
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+010e4756e4ab9ca422651dda515e7bd5
+  getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
+df0bd24c37d57bc4e1d43db05db50ee7
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+33ec8e4dfb3be320ce0151d73d2f9052
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+f43af79e51ebfd6df22a77162a09f984
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+54600ea36ca0b8547d8a8b5a824ecca5
+  version :: Data.Version.Version
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

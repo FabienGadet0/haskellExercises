@@ -1,0 +1,621 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-14 12:51:42.522411 UTC
+
+interface isbn-verifier-1.1.0.1-HLFyrrzNZ6Y1Wx6hrRAOVi:Paths_isbn_verifier 8002
+  interface hash: 465faac35b4bb1852ba79d14665ce178
+  ABI hash: d6f8a4dd74d0f8bee56f69d5de594a2b
+  export-list hash: d8d2c59564602b4fd73117be8e951838
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7d6ecbbe7807ae1be68dd159996443be
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_isbn_verifier.getBinDir
+  Paths_isbn_verifier.getDataDir
+  Paths_isbn_verifier.getDataFileName
+  Paths_isbn_verifier.getDynLibDir
+  Paths_isbn_verifier.getLibDir
+  Paths_isbn_verifier.getLibexecDir
+  Paths_isbn_verifier.getSysconfDir
+  Paths_isbn_verifier.version
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Exception a76dd9666251322fe34dbcca3a0817bf
+import  -/  base-4.9.1.0:Control.Exception.Base 1e106916283856f4d9caeddab92cd861
+import  -/  base-4.9.1.0:Data.Version 20afc045b5bb277e8668ef72aca55a7e
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.IO eb504c57b397cf133849f8586f15dafb
+import  -/  base-4.9.1.0:GHC.IO.Exception 5064be4c355632a1d1c4f2322f56ac52
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.Environment 08cb808e8e6a7821e6f8cfa76a977431
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+addDependentFile "/home/fabien/.stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+03b8f3c825a6e45e6ff6da4768264ce3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Paths_isbn_verifier.$trModule2
+                   Paths_isbn_verifier.$trModule1) -}
+52ea7185a63020ed3a2c56046cd6c741
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Paths_isbn_verifier"#) -}
+44ddb82fd76a303bd721c9c3270fa872
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "isbn-verifier-1.1.0.1-HLFyrrzNZ6Y1Wx6hrRAOVi"#) -}
+09e64648ac2befecfc065c962dbc0a7b
+  bindir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/isbn-verifier/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/bin"#) -}
+d546d2232f4df31c095f1a64b0c02ae3
+  datadir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/isbn-verifier/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/share/x86_64-linux-ghc-8.0.2/isbn-verifier-1.1.0.1"#) -}
+59e06abdf84f39c8ceffdc2eb8cbf5fa
+  dynlibdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/isbn-verifier/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/lib/x86_64-linux-ghc-8.0.2"#) -}
+2792645af76760d296289fde832dbfb1
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_isbn_verifier.getBinDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+ebcdb5d2bece065cd2fe3e087a206ca3
+  getBinDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_isbn_verifier.getBinDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_isbn_verifier.getBinDir2
+                   eta) -}
+131f4b567564be3e17423f27fe6ea26f
+  getBinDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_isbn_verifier.bindir #) } } } } }) -}
+2faf62ec03e8f52caf8e39a8de3f64d3
+  getBinDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_isbn_verifier.getBinDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+324a280c46dd64b10d9236b2e67eaf47
+  getBinDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_isbn_verifier.getBinDir5) -}
+36662e4b428a8064145248fc1d2a9d3a
+  getBinDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "isbn_verifier_bindir"#) -}
+11a58542c3b5cc7b4514b97c1180203b
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_isbn_verifier.getDataDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+36080a1cef37a8fd3ddb3531f774e8ee
+  getDataDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_isbn_verifier.getDataDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_isbn_verifier.getDataDir2
+                   eta) -}
+2ca4ec6930d631c7a6860837676e1f73
+  getDataDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_isbn_verifier.datadir #) } } } } }) -}
+1772e963cd226024f3b6adb1a706274a
+  getDataDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_isbn_verifier.getDataDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+b4af3d6d7bf7fac787ce837a05b34287
+  getDataDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_isbn_verifier.getDataDir5) -}
+8f7b8753ca0d856dae8ccf3f640c3c16
+  getDataDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "isbn_verifier_datadir"#) -}
+ece9399b04b1c7fcaa0763ef249a0901
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_isbn_verifier.getDataFileName1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
+f13c6023b85b760e091b729eb367d6ac
+  getDataFileName1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (name :: GHC.IO.FilePath)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.catch#
+                        @ GHC.Base.String
+                        @ GHC.Exception.SomeException
+                        Paths_isbn_verifier.getDataDir3
+                          `cast`
+                        (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                        Paths_isbn_verifier.getDataDir2
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      ipv1
+                      (GHC.CString.unpackAppendCString# "/"# name) #) }) -}
+80cd02892cd6b60fb9f7213ad3d34c8e
+  getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_isbn_verifier.getDynLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+23a17bcf875150e0fd91ad91ae22ae15
+  getDynLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_isbn_verifier.getDynLibDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_isbn_verifier.getDynLibDir2
+                   eta) -}
+96ef3f75bc115718aa057e3fbf37d50a
+  getDynLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_isbn_verifier.dynlibdir #) } } } } }) -}
+6dfb4b88d5e71401f3131faf6f356f10
+  getDynLibDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_isbn_verifier.getDynLibDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+9ca1dd7f352be0a2db955949000271ed
+  getDynLibDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_isbn_verifier.getDynLibDir5) -}
+d53365a7b3afe912a2d41f2fe1e126af
+  getDynLibDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "isbn_verifier_dynlibdir"#) -}
+7aa5e9c24c3a0ef0f95eeb63850cb06d
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_isbn_verifier.getLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+df3a99aa9fe2c31715049bd95ac35c13
+  getLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_isbn_verifier.getLibDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_isbn_verifier.getLibDir2
+                   eta) -}
+d4934713d529719a5ef76a9882493d13
+  getLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_isbn_verifier.libdir #) } } } } }) -}
+d31ea79658b65bb6532fd1585ffb43ad
+  getLibDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_isbn_verifier.getLibDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+7963eb9d7d2954fed6a0a02a0b48dbef
+  getLibDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_isbn_verifier.getLibDir5) -}
+7ce7a80f82ad8241842a4674b32204f9
+  getLibDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "isbn_verifier_libdir"#) -}
+fe244962dae6e1b6533cc96591cc8541
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_isbn_verifier.getLibexecDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+789b82043f6645c0df122ef457963775
+  getLibexecDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_isbn_verifier.getLibexecDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_isbn_verifier.getLibexecDir2
+                   eta) -}
+2207c90de7453f44fe1fb9af175c8e54
+  getLibexecDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_isbn_verifier.libexecdir #) } } } } }) -}
+797e12015a4004739b2e865118a74992
+  getLibexecDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_isbn_verifier.getLibexecDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+e6de45cfb53489ce67caf712570e44a4
+  getLibexecDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_isbn_verifier.getLibexecDir5) -}
+e80824cbbdd30a57617b6c9ef0c2c415
+  getLibexecDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "isbn_verifier_libexecdir"#) -}
+a913176552892f661dd929b0dacec01b
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_isbn_verifier.getSysconfDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+e7e294589fdf9b31520511f741c29b20
+  getSysconfDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_isbn_verifier.getSysconfDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_isbn_verifier.getSysconfDir2
+                   eta) -}
+3a2e2080e96f3a3eb9f129e6a216b4b8
+  getSysconfDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_isbn_verifier.sysconfdir #) } } } } }) -}
+09d609489535891017e3b4638128e9a3
+  getSysconfDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_isbn_verifier.getSysconfDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+d390b031f4db1263e4402d69661fc6eb
+  getSysconfDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_isbn_verifier.getSysconfDir5) -}
+7c55de12890f0e618888b5b3a613dc6f
+  getSysconfDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "isbn_verifier_sysconfdir"#) -}
+a9b794f16dbe84319a650a57639f7c79
+  libdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/isbn-verifier/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/lib/x86_64-linux-ghc-8.0.2/isbn-verifier-1.1.0.1-HLFyrrzNZ6Y1Wx6hrRAOVi"#) -}
+0ffc96838aa83b44ae30ab880d81b2c6
+  libexecdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/isbn-verifier/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/libexec"#) -}
+1e3f99e27d9ae1f42a199174a6731953
+  sysconfdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "/home/fabien/exercism/haskell/isbn-verifier/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/etc"#) -}
+4868e4ed6f7d13ea759d9a0d2555a2af
+  version :: Data.Version.Version
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.Version.Version
+                   Paths_isbn_verifier.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+dcf957c1b9f53aa8edb4930c5c5365d3
+  version1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_isbn_verifier.version5
+                   Paths_isbn_verifier.version2) -}
+260fb83515f3f594c2cba584f2c94ea3
+  version2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_isbn_verifier.version5
+                   Paths_isbn_verifier.version3) -}
+3099128be6a343c65b59f21d29d9462e
+  version3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_isbn_verifier.version6
+                   Paths_isbn_verifier.version4) -}
+158b935d0fc28c56d0d60d6d2a747ccb
+  version4 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_isbn_verifier.version5
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+a73680e4d1f90944c187d508cd09b951
+  version5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+fa1e63faac405bd37b9295708763ce5f
+  version6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

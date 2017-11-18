@@ -1,0 +1,108 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-16 16:47:51.124883 UTC
+
+interface isogram-1.2.0.2-A0Iep9c4NNLwsDZqST8D8:Isogram 8002
+  interface hash: f7d9f8aa39baaeda8063c1f7dd9e3df6
+  ABI hash: ce6660671321364591f00a505810184e
+  export-list hash: 4c4b202fa0b0b6aa83034dcd609c6ae1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Isogram.isIsogram
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+dd53a23af974fad8df32c3f31d7934a9
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Isogram.$trModule2
+                   Isogram.$trModule1) -}
+c61c5c1e0e4329b8ab5e623aaaf04c92
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Isogram"#) -}
+a3d8b4571f609fd55a9acce8468d92c9
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "isogram-1.2.0.2-A0Iep9c4NNLwsDZqST8D8"#) -}
+b85ff6e2cd87de9fc95bcecd8af4098f
+  isIsogram :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (text :: GHC.Base.String) ->
+                 let {
+                   lst :: GHC.Base.String
+                   = GHC.Base.map
+                       @ GHC.Types.Char
+                       @ GHC.Types.Char
+                       GHC.Unicode.toLower
+                       text
+                 } in
+                 letrec {
+                   go :: [GHC.Types.Char] -> Data.Monoid.All
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [GHC.Types.Char]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.True `cast` (Sym (Data.Monoid.N:All[0]))
+                       : y ys
+                       -> letrec {
+                            $wgo :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
+                              {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+                            = \ (w :: [GHC.Types.Char]) (ww :: GHC.Prim.Int#) ->
+                              case w of wild1 {
+                                [] -> ww
+                                : y1 ys1
+                                -> case y1 of wild2 { GHC.Types.C# x ->
+                                   case y of wild3 { GHC.Types.C# y2 ->
+                                   case GHC.Prim.tagToEnum#
+                                          @ GHC.Types.Bool
+                                          (GHC.Prim.eqChar# x y2) of wild4 {
+                                     GHC.Types.False -> $wgo ys1 ww
+                                     GHC.Types.True -> $wgo ys1 (GHC.Prim.+# ww 1#) } } } }
+                          } in
+                          case $wgo lst 0# of ww { DEFAULT ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# ww 2#) of wild1 {
+                            GHC.Types.False
+                            -> case y of wild2 { GHC.Types.C# c# ->
+                               case {__pkg_ccall base-4.9.1.0 u_iswalpha GHC.Prim.Int#
+                                                                         -> GHC.Prim.State#
+                                                                              GHC.Prim.RealWorld
+                                                                         -> (# GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld,
+                                                                               GHC.Prim.Int# #)}
+                                      (GHC.Prim.ord# c#)
+                                      GHC.Prim.realWorld# of wild3 { (#,#) ds1 ds2 ->
+                               case ds2 of wild4 {
+                                 DEFAULT -> GHC.Types.False `cast` (Sym (Data.Monoid.N:All[0]))
+                                 0# -> go ys } } }
+                            GHC.Types.True -> go ys } } }
+                 } in
+                 (go text) `cast` (Data.Monoid.N:All[0])) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
