@@ -1,0 +1,82 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-19 17:22:11.862263 UTC
+
+interface scrabble-score-1.0.0.3-4FYZdap6BeG6VEaLcO4gEy:Scrabble 8002
+  interface hash: 99b11bdcf6bfa25ce8460208da002849
+  ABI hash: 08182438de6ffc6f9760d605deeab55c
+  export-list hash: ad3230eea64415b38984826f2f75d0d9
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Scrabble.scoreLetter
+  Scrabble.scoreWord
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+8ed2560f68614975dc139a8e1d982c15
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Scrabble.$trModule2
+                   Scrabble.$trModule1) -}
+0953f5f074e276f375a0db620d9e8071
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Scrabble"#) -}
+ee81332b051b0832c5bf0337f554a20f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "scrabble-score-1.0.0.3-4FYZdap6BeG6VEaLcO4gEy"#) -}
+5ebf09c0b0406f5029a38c32d8e7bd27
+  $wgo :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+c865dd4d48378b3c375583da42624c8a
+  $wscoreLetter :: GHC.Types.Char -> GHC.Prim.Int#
+  {- Arity: 1, Strictness: <L,1*U(U)>, Inline: [0] -}
+0f2c4fcaaedb52c1226acb7a98908b47
+  scoreLetter :: GHC.Types.Char -> GHC.Types.Int
+  {- Arity: 1, Strictness: <L,1*U(U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Char) ->
+                 case Scrabble.$wscoreLetter w of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+e213c60692c38934333bb5f327e147f2
+  scoreWord :: [GHC.Types.Char] -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [GHC.Types.Char]) ->
+                 case (Scrabble.scoreWord_go w)
+                        `cast`
+                      (Data.Monoid.N:All[0]) of wild {
+                   GHC.Types.False
+                   -> case Scrabble.$wgo w 0# of ww { DEFAULT -> GHC.Types.I# ww }
+                   GHC.Types.True -> GHC.Types.I# 0# }) -}
+de5d1f9a6fa22c6a917fa300ecdf2a9f
+  scoreWord_go :: [GHC.Types.Char] -> Data.Monoid.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

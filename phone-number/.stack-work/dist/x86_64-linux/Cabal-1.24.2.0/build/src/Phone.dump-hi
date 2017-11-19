@@ -1,0 +1,119 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-19 16:37:21.322917 UTC
+
+interface phone-number-1.2.0.4-EYtage4mHVx2CHbpzxF2LQ:Phone 8002
+  interface hash: 6e04206088d7afd5ec3b7c8ee2e06def
+  ABI hash: c7f1a395f1f75b6098e8a5a2bfb8494b
+  export-list hash: e7e9ade980c04fd8ba59eaaccd4cc3be
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Phone.number
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+5b90d6b1a0088789194b6d72d1be5397
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Phone.$trModule2 Phone.$trModule1) -}
+1305834c77e70ba9e7bdea0d26a7607c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Phone"#) -}
+db443b19c12f80f4c9e1db9587f769a3
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "phone-number-1.2.0.4-EYtage4mHVx2CHbpzxF2LQ"#) -}
+0cf862cdea5350ee45849bc4cf0d4f90
+  checkValidity :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Types.Char]) ->
+                 case GHC.List.$wunsafeTake @ GHC.Types.Char 4# xs of wild {
+                   [] -> case GHC.List.badHead ret_ty GHC.Types.Bool of {}
+                   : x ds1
+                   -> case x of ww { GHC.Types.C# ww1 ->
+                      case Data.Char.$wdigitToInt ww1 of ww2 { DEFAULT ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.># ww2 1#) of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> case Phone.number_go
+                                  wild
+                                  (GHC.List.lastError @ GHC.Types.Char) of ww4 { GHC.Types.C# ww5 ->
+                           case Data.Char.$wdigitToInt ww5 of ww6 { DEFAULT ->
+                           GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.># ww6 1#) } } } } } }) -}
+f644b7fd06b3a9a8ca2e719d1cdb766c
+  number :: [GHC.Types.Char] -> GHC.Base.Maybe [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Types.Char]) ->
+                 let {
+                   r :: [GHC.Types.Char]
+                   = GHC.List.filter @ GHC.Types.Char GHC.Unicode.isDigit xs
+                 } in
+                 let {
+                   $j :: GHC.Prim.Void# -> GHC.Base.Maybe [GHC.Types.Char]
+                     {- Arity: 1, Strictness: <L,A> -}
+                   = \ (w :: GHC.Prim.Void#)[OneShot] ->
+                     case GHC.List.$wlenAcc @ GHC.Types.Char r 0# of ww2 {
+                       DEFAULT -> GHC.Base.Nothing @ [GHC.Types.Char]
+                       10#
+                       -> case Phone.checkValidity r of wild {
+                            GHC.Types.False -> GHC.Base.Nothing @ [GHC.Types.Char]
+                            GHC.Types.True
+                            -> GHC.Base.Just
+                                 @ [GHC.Types.Char]
+                                 (case r of wild1 {
+                                    [] -> case GHC.List.badHead ret_ty [GHC.Types.Char] of {}
+                                    : x ds1
+                                    -> case x of wild2 { GHC.Types.C# x1 ->
+                                       case x1 of wild3 { DEFAULT -> wild1 '1'# -> ds1 } } }) } }
+                 } in
+                 case GHC.List.$wlenAcc @ GHC.Types.Char r 0# of ww2 {
+                   DEFAULT -> $j GHC.Prim.void#
+                   11#
+                   -> case r of wild {
+                        []
+                        -> case GHC.List.badHead
+                           ret_ty (GHC.Base.Maybe [GHC.Types.Char])
+                           of {}
+                        : x ds1
+                        -> case x of wild1 { GHC.Types.C# x1 ->
+                           case x1 of wild2 {
+                             DEFAULT -> $j GHC.Prim.void#
+                             '1'#
+                             -> case Phone.checkValidity ds1 of wild3 {
+                                  GHC.Types.False -> $j GHC.Prim.void#
+                                  GHC.Types.True
+                                  -> GHC.Base.Just @ [GHC.Types.Char] ds1 } } } } }) -}
+27e867f009b4f1e4c5fef746c56a06e3
+  number_go :: [GHC.Types.Char] -> GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U)> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

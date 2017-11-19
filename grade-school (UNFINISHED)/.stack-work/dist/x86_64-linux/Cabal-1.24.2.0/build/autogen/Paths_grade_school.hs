@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,2] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/home/fabien/exercism/haskell/grade-school/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/bin"
-libdir     = "/home/fabien/exercism/haskell/grade-school/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/lib/x86_64-linux-ghc-8.0.2/grade-school-0.1.0.2-4gC9p9bBCVOFsvnw15sdif"
-dynlibdir  = "/home/fabien/exercism/haskell/grade-school/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/lib/x86_64-linux-ghc-8.0.2"
-datadir    = "/home/fabien/exercism/haskell/grade-school/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/share/x86_64-linux-ghc-8.0.2/grade-school-0.1.0.2"
-libexecdir = "/home/fabien/exercism/haskell/grade-school/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/libexec"
-sysconfdir = "/home/fabien/exercism/haskell/grade-school/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/etc"
+bindir     = "/home/fabien/exercism/haskell/grade-school (UNFINISHED)/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/bin"
+libdir     = "/home/fabien/exercism/haskell/grade-school (UNFINISHED)/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/lib/x86_64-linux-ghc-8.0.2/grade-school-0.1.0.2-3KIl9otsWWx1PMbiqZTPKm"
+dynlibdir  = "/home/fabien/exercism/haskell/grade-school (UNFINISHED)/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/lib/x86_64-linux-ghc-8.0.2"
+datadir    = "/home/fabien/exercism/haskell/grade-school (UNFINISHED)/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/share/x86_64-linux-ghc-8.0.2/grade-school-0.1.0.2"
+libexecdir = "/home/fabien/exercism/haskell/grade-school (UNFINISHED)/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/libexec"
+sysconfdir = "/home/fabien/exercism/haskell/grade-school (UNFINISHED)/.stack-work/install/x86_64-linux/lts-9.11/8.0.2/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "grade_school_bindir") (\_ -> return bindir)
