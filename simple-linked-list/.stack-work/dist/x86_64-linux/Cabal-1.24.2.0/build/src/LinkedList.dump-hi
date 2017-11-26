@@ -1,0 +1,236 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-21 06:47:05.338558 UTC
+
+interface simple-linked-list-0.1.0.2-6wfMmtM7ZAwHZomn5dCWIE:LinkedList 8002
+  interface hash: 704a755555b4d34b522c296f1c405362
+  ABI hash: 52373eb3bef3b072dc2a89b921bb783e
+  export-list hash: 501b3a788b71e66f92f2e5c998ada556
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  LinkedList.datum
+  LinkedList.fromList
+  LinkedList.isNil
+  LinkedList.new
+  LinkedList.next
+  LinkedList.nil
+  LinkedList.reverseLinkedList
+  LinkedList.toList
+  LinkedList.LinkedList
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+8580a72d30d962de2e9d43a7b140dc7a
+  $fEqLinkedList ::
+    GHC.Classes.Eq a => GHC.Classes.Eq (LinkedList.LinkedList a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dEq :: GHC.Classes.Eq a).
+                  @ (LinkedList.LinkedList a)
+                  (LinkedList.$fEqLinkedList_$c== @ a $dEq)
+                  (LinkedList.$fEqLinkedList_$c/= @ a $dEq) -}
+8580a72d30d962de2e9d43a7b140dc7a
+  $fEqLinkedList_$c/= ::
+    GHC.Classes.Eq a =>
+    LinkedList.LinkedList a
+    -> LinkedList.LinkedList a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (a1 :: LinkedList.LinkedList a)
+                   (b :: LinkedList.LinkedList a) ->
+                 case LinkedList.$fEqLinkedList_$c== @ a $dEq a1 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+8580a72d30d962de2e9d43a7b140dc7a
+  $fEqLinkedList_$c== ::
+    GHC.Classes.Eq a =>
+    LinkedList.LinkedList a
+    -> LinkedList.LinkedList a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U> -}
+8580a72d30d962de2e9d43a7b140dc7a
+  $fShowLinkedList ::
+    GHC.Show.Show a => GHC.Show.Show (LinkedList.LinkedList a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (LinkedList.LinkedList a)
+                  (LinkedList.$fShowLinkedList_$cshowsPrec @ a $dShow)
+                  (LinkedList.$fShowLinkedList_$cshow @ a $dShow)
+                  (LinkedList.$fShowLinkedList_$cshowList @ a $dShow) -}
+5485c03d7264f9ab5e8cddaced1e2c10
+  $fShowLinkedList1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+8580a72d30d962de2e9d43a7b140dc7a
+  $fShowLinkedList_$cshow ::
+    GHC.Show.Show a => LinkedList.LinkedList a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: LinkedList.LinkedList a) ->
+                 LinkedList.$fShowLinkedList_$cshowsPrec
+                   @ a
+                   $dShow
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+8580a72d30d962de2e9d43a7b140dc7a
+  $fShowLinkedList_$cshowList ::
+    GHC.Show.Show a => [LinkedList.LinkedList a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [LinkedList.LinkedList a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (LinkedList.LinkedList a)
+                   (LinkedList.$fShowLinkedList_$cshowsPrec
+                      @ a
+                      $dShow
+                      LinkedList.$fShowLinkedList1)
+                   eta
+                   eta1) -}
+8580a72d30d962de2e9d43a7b140dc7a
+  $fShowLinkedList_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> LinkedList.LinkedList a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><L,1*U(U)><S,1*U> -}
+16aa8aa92764d446e73ccafc9d254f9d
+  $tc'CurrentElem :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16703386486267745242##
+                   13710385276492832861##
+                   LinkedList.$trModule
+                   LinkedList.$tc'CurrentElem1) -}
+7ebaa23f4434c600cc9a3c27c5913064
+  $tc'CurrentElem1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'CurrentElem"#) -}
+69348b3f91431a08bfc34bff0fd1731b
+  $tc'Nil :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16858605388481088392##
+                   15255009009134274400##
+                   LinkedList.$trModule
+                   LinkedList.$tc'Nil1) -}
+91234b834100e11e0de822f0294c3e92
+  $tc'Nil1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Nil"#) -}
+6acf1580feeefd1d48289ba0517dc022
+  $tcLinkedList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   769518021204359519##
+                   14848323065778414568##
+                   LinkedList.$trModule
+                   LinkedList.$trModule1) -}
+1a5b663bd167f71d3704f767f91ef777
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LinkedList.$trModule2
+                   LinkedList.$trModule1) -}
+664d876970ab7957d7da46f440df9e8b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "LinkedList"#) -}
+4421dac708779e0daa647d19a15fa505
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "simple-linked-list-0.1.0.2-6wfMmtM7ZAwHZomn5dCWIE"#) -}
+8580a72d30d962de2e9d43a7b140dc7a
+  data LinkedList a = Nil | CurrentElem a (LinkedList.LinkedList a)
+37ed121793d7ec44a5e2e4f3acdee8d3
+  datum :: LinkedList.LinkedList a -> a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.Nil -> LinkedList.datum1 @ a
+                   LinkedList.CurrentElem a1 ds1 -> a1 }) -}
+f85f0e6b28eef974422fa36e879dee0a
+  datum1 :: a
+  {- Strictness: x -}
+ed500adde9ddc52d94d34bbfae0fdc49
+  fromList :: [a] -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+1d0d41b067434c6fb20c64ec61759dd5
+  isNil :: LinkedList.LinkedList a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.Nil -> GHC.Types.True
+                   LinkedList.CurrentElem ipv ipv1 -> GHC.Types.False }) -}
+f53e3ed5e7f24239d06161edc78f6adf
+  new :: a -> LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m2,
+     Unfolding: InlineRule (0, True, True) LinkedList.CurrentElem -}
+c6ea938bec3dcfcf86c9ff28c1459f0d
+  next :: LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.Nil -> LinkedList.next1 @ a
+                   LinkedList.CurrentElem ds1 n -> n }) -}
+b2a0f4f248fc5868ee432f3701619cad
+  next1 :: LinkedList.LinkedList a
+  {- Strictness: x -}
+d7270d086ad443e961c13426506424d1
+  nil :: LinkedList.LinkedList a
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) LinkedList.Nil -}
+82f1305ece2e34481e0879ad63e913fd
+  reverseLinkedList ::
+    LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (linkedList :: LinkedList.LinkedList a) ->
+                 LinkedList.fromList
+                   @ a
+                   (GHC.List.reverse1
+                      @ a
+                      (LinkedList.toList @ a linkedList)
+                      (GHC.Types.[] @ a))) -}
+feb35a86a26166a45d7b8151889fb086
+  toList :: LinkedList.LinkedList a -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+instance [safe] GHC.Classes.Eq [LinkedList.LinkedList]
+  = LinkedList.$fEqLinkedList
+instance [safe] GHC.Show.Show [LinkedList.LinkedList]
+  = LinkedList.$fShowLinkedList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

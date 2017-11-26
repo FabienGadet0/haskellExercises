@@ -11,7 +11,6 @@ firstLetterToUpper x = toUpper (head x) : tail x
 clean :: [Char] -> [[Char]]
 clean xs = map firstLetterToUpper $ words $ splitOn '-' xs
 
-
 ilEstChiantCetExercice :: [Char] -> [Char]
 ilEstChiantCetExercice [] = []
 ilEstChiantCetExercice [a] = []
